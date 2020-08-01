@@ -109,6 +109,7 @@ letter-spacing: 0.02em;
 
 .navigation-list-link {
 color: var(--title-light-theme-color);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .address-list{
@@ -119,6 +120,7 @@ display: flex;
 color: var(--text-light-theme-color);
 align-items: center;
 display: flex;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list-link:hover,
@@ -193,7 +195,7 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 padding: 10px 32px;
-
+cursor: pointer;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.86;
@@ -408,12 +410,14 @@ border-radius: 50%;
 background-color: var(--title-dark-theme-color);
 background-position: center;
 background-repeat: no-repeat;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social-list-item {
 width: 20px;
 height: 20px;
 fill: var(--siriy-color);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item-link:hover .icon-social-list-item {
@@ -440,6 +444,8 @@ fill: var(--title-dark-theme-color);
     justify-content: center;
     align-items: center; 
     fill: var(--siriy-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
 .client-link:hover {
@@ -564,6 +570,9 @@ padding: 6px 22px;
 background: var(--fon-color);
 border-radius: 4px;
 border: 1px solid transparent;
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+           color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list-item:not(:last-child) {
@@ -603,6 +612,7 @@ margin-right: 30px;
 margin-bottom: 30px;
 background: var(--title-dark-theme-color);
 box-sizing: border-box;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-galery-list:nth-child(3n) {
